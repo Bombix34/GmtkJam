@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: f2ac0c7b36a9eae43b3a33e7cb2e391b
+timeCreated: 1500197587
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: MAIN001
+    100002: R_Finger1_01
+    100004: R_Finger1_02
+    100006: R_Finger1_03
+    100008: R_Finger2_01
+    100010: R_Finger2_02
+    100012: R_Finger2_03
+    100014: R_Finger2_CTRL002
+    100016: R_Finger2_CTRL003
+    100018: R_Finger2_CTRL004
+    100020: R_Finger2_CTRL005
+    100022: R_Finger2_CTRL006
+    100024: R_Finger2_CTRL007
+    100026: R_Finger2_CTRL008
+    100028: R_Finger2_CTRL009
+    100030: R_Finger2_CTRL1
+    100032: R_Finger3_01
+    100034: R_Finger3_02
+    100036: R_Finger3_03
+    100038: R_fingerlink1
+    100040: R_fingerlink2
+    100042: R_Hand
+    100044: R_Hand_CTRL
+    100046: //RootNode
+    400000: MAIN001
+    400002: R_Finger1_01
+    400004: R_Finger1_02
+    400006: R_Finger1_03
+    400008: R_Finger2_01
+    400010: R_Finger2_02
+    400012: R_Finger2_03
+    400014: R_Finger2_CTRL002
+    400016: R_Finger2_CTRL003
+    400018: R_Finger2_CTRL004
+    400020: R_Finger2_CTRL005
+    400022: R_Finger2_CTRL006
+    400024: R_Finger2_CTRL007
+    400026: R_Finger2_CTRL008
+    400028: R_Finger2_CTRL009
+    400030: R_Finger2_CTRL1
+    400032: R_Finger3_01
+    400034: R_Finger3_02
+    400036: R_Finger3_03
+    400038: R_fingerlink1
+    400040: R_fingerlink2
+    400042: R_Hand
+    400044: R_Hand_CTRL
+    400046: //RootNode
+    2300000: R_Finger2_CTRL002
+    2300002: R_Finger2_CTRL003
+    2300004: R_Finger2_CTRL004
+    2300006: R_Finger2_CTRL005
+    2300008: R_Finger2_CTRL006
+    2300010: R_Finger2_CTRL007
+    2300012: R_Finger2_CTRL008
+    2300014: R_Finger2_CTRL009
+    2300016: R_Finger2_CTRL1
+    2300018: R_Hand_CTRL
+    3300000: R_Finger2_CTRL002
+    3300002: R_Finger2_CTRL003
+    3300004: R_Finger2_CTRL004
+    3300006: R_Finger2_CTRL005
+    3300008: R_Finger2_CTRL006
+    3300010: R_Finger2_CTRL007
+    3300012: R_Finger2_CTRL008
+    3300014: R_Finger2_CTRL009
+    3300016: R_Finger2_CTRL1
+    3300018: R_Hand_CTRL
+    4300000: R_Hand_CTRL
+    4300002: R_Finger2_CTRL009
+    4300004: R_Finger2_CTRL008
+    4300006: R_Finger2_CTRL007
+    4300008: R_Finger2_CTRL1
+    4300010: R_Finger2_CTRL002
+    4300012: R_Finger2_CTRL003
+    4300014: R_Finger2_CTRL006
+    4300016: R_Finger2_CTRL005
+    4300018: R_Finger2_CTRL004
+    4300020: MAIN001
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: MAIN001
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

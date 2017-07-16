@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamGMTK", "GameJamGMTK.csproj", "{C63E84D5-1443-C867-38F3-DEF764C2D1AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJamGMTK.Editor", "GameJamGMTK.Editor.csproj", "{C7BE5CE4-F321-3959-1280-286A07141A0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C63E84D5-1443-C867-38F3-DEF764C2D1AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C63E84D5-1443-C867-38F3-DEF764C2D1AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C63E84D5-1443-C867-38F3-DEF764C2D1AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C63E84D5-1443-C867-38F3-DEF764C2D1AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7BE5CE4-F321-3959-1280-286A07141A0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BE5CE4-F321-3959-1280-286A07141A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BE5CE4-F321-3959-1280-286A07141A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BE5CE4-F321-3959-1280-286A07141A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
