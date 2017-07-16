@@ -80,10 +80,12 @@ public class HandController : MonoBehaviour {
 
                 if (HandOnWall)
                 {
+                    //handAnimator.SetTrigger("Clamp");
                     releaseHandFromWall();
                 }
                 else if (HandInUse)
                 {
+                    //handAnimator.SetTrigger("Clamp");
                     startGoingForward = false;
                     startGoingBackward = true;
 
@@ -102,6 +104,7 @@ public class HandController : MonoBehaviour {
                 if(enemyInHand)
                 {
                     enemyInHand = false;
+                    handAnimator.SetTrigger("Throw");
                     ennemyReference.GetComponent<EnemiesScript>().resetGravity();
                     ennemyReference.transform.localPosition = new Vector3(0f, positionCameraY, 2f);
                     ennemyReference.transform.parent = null;
@@ -142,6 +145,11 @@ public class HandController : MonoBehaviour {
                 transform.localRotation = Quaternion.identity;
                 HandInUse = false;
                 startGoingBackward = false;
+
+                if(!enemyInHand)
+                {
+                    handAnimator.SetTrigger("Idle");
+                }
             }
         }
         else if ((transform.position - Player.transform.position).magnitude >= MaxDistanceHand)
@@ -163,7 +171,8 @@ public class HandController : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Struct" && startGoingForward == true)
-        {   
+        {
+            handAnimator.SetTrigger("Clamp");
             HandOnWall = true;
             //transform.parent = collision.transform;
 
@@ -177,7 +186,7 @@ public class HandController : MonoBehaviour {
             rBody.isKinematic = true;
 
 
-            transform.position = collision.contacts[0].point;
+            //transform.position = collision.contacts[0].point;
             structOffset = collision.transform.position - transform.position;
             structTouching = collision.transform;
 
@@ -220,6 +229,7 @@ public class HandController : MonoBehaviour {
          */
         if(collision.gameObject.tag == "Enemy" && startGoingForward == true){
 
+            handAnimator.SetTrigger("Clamp");
             enemyInHand = true;
             collision.gameObject.GetComponent<EnemiesScript>().grabEnemy();
 

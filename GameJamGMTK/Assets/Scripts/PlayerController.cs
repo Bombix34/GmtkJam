@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
     public float maxAirSpeed = 100f;
     public float speedPull = 1f;
     public float distanceOfHandFromWall = 1f;
+    public Animator leftHandAnimator;
+    //public Animator rightHandAnimator;
 
     private bool startPullingPlayer = false;
     private Vector3 targetPull;
@@ -59,6 +61,8 @@ public class PlayerController : MonoBehaviour {
 
                 offsetToStayAt = transform.position - (handAttach.transform.position + offsetHand);
             }
+
+            leftHandAnimator.SetFloat("Movement speed", 0f);
         }
         else if(numberOfHandAttachOnWall <= 0)
         {
@@ -67,12 +71,18 @@ public class PlayerController : MonoBehaviour {
             if (IsGrounded())
             {
                 inputValues = inputValues * speedWalking;
+
+                leftHandAnimator.SetFloat("Movement speed", inputValues.magnitude);
+
                 Vector3 vectorForce = new Vector3(inputValues.x, rBody.velocity.y, inputValues.y);
                 vectorForce = Quaternion.AngleAxis(transform.rotation.eulerAngles.y, Vector3.up) * vectorForce;
                 rBody.velocity = vectorForce;
             }
             else
             {
+                leftHandAnimator.SetFloat("Movement speed", inputValues.magnitude);
+                leftHandAnimator.SetFloat("Movement speed", 0f);
+
                 inputValues = inputValues * airControlForce;
                 Vector3 vectorForce = new Vector3(inputValues.x, 0f, inputValues.y);
 
@@ -88,6 +98,16 @@ public class PlayerController : MonoBehaviour {
         else
         {
             transform.position = (handAttach.transform.position + offsetHand) + offsetToStayAt;
+            leftHandAnimator.SetFloat("Movement speed", 0f);
+        }
+
+        if(IsGrounded())
+        {
+            leftHandAnimator.SetBool("Is in air?", false);
+        }
+        else
+        {
+            leftHandAnimator.SetBool("Is in air?", true);
         }
     }
 
